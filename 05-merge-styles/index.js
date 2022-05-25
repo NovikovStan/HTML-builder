@@ -33,5 +33,5 @@ const folder = path.join(__dirname, "styles");
     }
   }
 
-  await fsPromises.writeFile(bundle, styles);
+  await fsPromises.writeFile(bundle, styles.join(""));
 })();
